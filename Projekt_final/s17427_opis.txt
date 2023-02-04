@@ -1,0 +1,34 @@
+By rozpocząć należy skorzystac z komendy: start.
+
+
+Story:
+
+	1. Sprawdz ile rzeczy jest w szafie w sypialni i czy znajduje sie w niej tshirt
+		?- start.
+		?- obecne_pomieszczenie(X).
+		?- przejdz_do(sypialnia).
+		?- co_widze(X).
+		?- ile_rzeczy_w_szafie.
+		?- czy_jest_w_szafie(tshirt).
+
+	2. Sprawdz ile rzeczy jest w szafie w sypialni i czy znajduje sie w niej tshirt
+		?- start.
+		?- obecne_pomieszczenie(X).
+gdzie kot_1	?- poglaszcz_kotka(kot_1).
+gdzie kot_2	?- poglaszcz_kotka(kot_2).
+		?- przejdz_do(kuchnia).
+		?- poglaszcz_kotka(kot_2).
+		?- przejdz_do(przedpokoj).
+		?- przejdz_do(salon).
+		?- poglaszcz_kotka(kot_1).
+		?- poglaskane_kotki(X).
+
+	3. Odszukaj skarb
+		?- start.
+		?- obecne_pomieszczenie(X).
+		?- co_widze(X).
+		?- przejdz_do(salon).
+		?- co_widze(X).
+		?- przejdz_do(schowek).
+		?- co_widze(X).
+		?- otworz_skarb.
